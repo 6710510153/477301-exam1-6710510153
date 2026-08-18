@@ -15,6 +15,7 @@
                 <li><a href="#about">ร้านอาหารทะเลของเราเป็นอย่างไร</a></li>
                 <li><a href="#menu">เมนูที่ทางร้านเเนะนำ</a></li>
                 <li><a href="#price">ราคาอาหาร</a></li>
+                <li><a href="#order">สั่งชื้ออาหาร</a></li>
                 <li><a href="#contact">สำหรับติดต่อทางร้าน</a></li>
             
             </ul>
@@ -77,6 +78,44 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section id="order">
+            <h2>สั่งชื้ออาหารออนไลน์</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>ข้อมูลที่อยู่ผู้สั่ง</legend>
+                    <div>
+                        <label for="Fullname">ชื่อ-นามสกุล</label>
+                        <input type="text" id="Fullname" name="Fullname" required>
+                    </div>
+                    <div>
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" name="email" required>
+                 </div>
+                 <div>
+                    <label for="phone">เบอร์ติดต่อ</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                 </div>
+                </fieldset>
+                <fieldset>
+                    <legend>สินค้า</legend>
+                    <div>
+                        <label for="quantity">จำนวนที่ต้องการ</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1" required>
+                    </div>
+                    <div>
+                        <label>รูปเเบบการส่ง</label>
+                        <input type="radio" id="frozen" name="saefood_type" value="frozen">
+                        <label for="frozen">เเช่เเข็ง</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sauce" name="extra_sauce" value="yes">
+                        <label for="sauce">รับน้ำจิ้มเพิ่ม ราคา 50 บาท</label>
+                    </div>
+                </fieldset>
+                <br>
+                <button type="submit">รับน้ำจิ้มเพิ่ม</button>
+            </form>
         </section>
         <section id="content">
             <h2>
